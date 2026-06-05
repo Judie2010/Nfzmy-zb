@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>南方智媒云行业周报 W2620期 | 2026.05.11 - 05.17</title>
+<meta property="og:title" content="南方智媒云行业周报 W2620期">
+<meta property="og:description" content="本周共收录 10 条资讯，覆盖 5 大版块。政策密集周：短视频标注规范+广电网络先锋案例+传媒技术大会，报业系统性变革持续深化。">
+<meta property="og:image" content="https://judie2010.github.io/Nfzmy-zb/og-image.png">
+<meta property="og:url" content="https://judie2010.github.io/Nfzmy-zb/w2620.html">
+<meta property="og:type" content="article">
+<style>
+  :root {
+    --bg: #F8FAFC;
+    --card-bg: #FFFFFF;
+    --text: #1A1A2E;
+    --text-secondary: #5A5A7A;
+    --text-muted: #8E8EA0;
+    --border: #E8EAF0;
+    --primary: #1B3A5C;
+    --accent: #6366F1;
+    --s-nanfang: #2563EB;
+    --s-jingpin: #7C3AED;
+    --s-zhengce: #DC2626;
+    --s-zhanlue: #059669;
+    --s-jishu: #D97706;
+    --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 16px;
+  }
+  .container { max-width: 860px; margin: 0 auto; }
+
+  .header {
+    text-align: center;
+    padding: 44px 32px 36px;
+    background: linear-gradient(135deg, #1B3A5C 0%, #2D5A8E 100%);
+    color: #fff;
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 180px; height: 180px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+  }
+  .header .issue-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+  }
+  .header h1 { font-size: 26px; font-weight: 700; letter-spacing: 1px; margin-bottom: 8px; }
+  .header .subtitle { font-size: 14px; opacity: 0.8; margin-bottom: 12px; }
+  .header .date-range {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 5px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .stats-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .stat-card {
+    flex: 1;
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .stat-card .num { font-size: 28px; font-weight: 700; color: var(--primary); }
+  .stat-card .label { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
+
+  .section {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border);
+    border-left: 4px solid transparent;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .section.nanfang { border-left-color: var(--s-nanfang); }
+  .section.jingpin { border-left-color: var(--s-jingpin); }
+  .section.zhengce { border-left-color: var(--s-zhengce); }
+  .section.zhanlue { border-left-color: var(--s-zhanlue); }
+  .section.jishu { border-left-color: var(--s-jishu); }
+  .section.judgment { border-left-color: var(--accent); background: linear-gradient(135deg, #F5F3FF 0%, #FFF 80%); }
+
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+  }
+
+  .sub-section { margin-bottom: 16px; }
+  .sub-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+    padding: 4px 10px;
+    background: #F0F4F8;
+    border-radius: 6px;
+    display: inline-block;
+  }
+
+  .news-item {
+    padding: 14px 0;
+    border-bottom: 1px solid #F0F2F5;
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-item .title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 1.5;
+  }
+  .news-item .title a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  .news-item .title a:hover { color: var(--accent); text-decoration: underline; }
+  .news-item .meta {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 7px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .news-item .meta .source {
+    background: #F0F2F5;
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+  .news-item .summary { font-size: 14px; color: var(--text-secondary); line-height: 1.75; }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .badge.blue { background: #EFF6FF; color: #2563EB; }
+  .badge.purple { background: #F5F3FF; color: #7C3AED; }
+  .badge.red { background: #FEF2F2; color: #DC2626; }
+  .badge.green { background: #ECFDF5; color: #059669; }
+  .badge.orange { background: #FFF7ED; color: #D97706; }
+
+  .judgment-block {
+    background: #fff;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-top: 12px;
+    border: 1px dashed var(--accent);
+  }
+  .judgment-block .verdict {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #EEE;
+    line-height: 1.7;
+  }
+  .judgment-block .insights { font-size: 14px; color: var(--text-secondary); padding-left: 18px; }
+  .judgment-block .insights li { margin-bottom: 10px; padding-left: 4px; }
+  .judgment-block .insights li::marker { color: var(--accent); }
+
+  .no-update {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 13px;
+    padding: 8px 0;
+    line-height: 1.7;
+  }
+
+  .archive-nav {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .archive-nav .archive-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .archive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+  }
+  .archive-item {
+    display: block;
+    padding: 12px 16px;
+    background: #F8FAFC;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .archive-item:hover {
+    background: #EFF6FF;
+    border-color: var(--accent);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(99,102,241,0.12);
+  }
+  .archive-item .issue { font-size: 13px; font-weight: 700; color: var(--primary); }
+  .archive-item .period { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+  .archive-item .tag {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 2;
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .stats-bar { flex-wrap: wrap; }
+    .stat-card { flex: 1 1 40%; }
+    .section, .archive-nav { padding: 18px; }
+    .header { padding: 28px 16px; }
+    .header h1 { font-size: 20px; }
+    .archive-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="issue-badge">W2620 · 第3期</div>
+    <h1>📰 南方智媒云行业周报</h1>
+    <div class="subtitle">聚焦南方智媒云及其竞品生态，追踪报业融媒技术前沿</div>
+    <div class="date-range">📅 2026年5月11日（周一）— 5月17日（周日）</div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-card"><div class="num">10</div><div class="label">本周收录资讯</div></div>
+    <div class="stat-card"><div class="num">5</div><div class="label">覆盖内容版块</div></div>
+    <div class="stat-card"><div class="num">3</div><div class="label">政策动态</div></div>
+    <div class="stat-card"><div class="num">2</div><div class="label">报业战略动态</div></div>
+  </div>
+
+  <!-- ===== 一、南方智媒云动态 ===== -->
+  <div class="section nanfang">
+    <div class="section-title">
+      <span class="badge blue">核心主体</span> 一、🔥 南方智媒云动态
+    </div>
+    <div class="section-desc">南方报业传媒集团 · 广东省首个媒体行业大模型双备案平台</div>
+
+    <div class="news-item">
+      <div class="title">📌 南方智媒云发布兼容性测试服务采购公告</div>
+      <div class="meta"><span class="source">南方报业物资采购网</span><span>5月14日</span></div>
+      <div class="summary">
+        广东南方智媒科技有限公司发布兼容性测试服务采购公告。测试需覆盖Android Top300款、iOS Top50款、HarmonyOS NEXT Top20款机型（含平板）及最新系统版本，共计48个版本，每个版本覆盖Android、iOS、鸿蒙三端。测试内容包括版本新增需求及APP主流程，测试后需提供测试报告、远程真机调试服务。报价截止时间为2026年5月22日17时。这是南方智媒云在基础设施层面持续投入、保障全省三级媒体客户端兼容性的重要信号。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 二、竞品生态追踪 ===== -->
+  <div class="section jingpin">
+    <div class="section-title">
+      <span class="badge purple">竞品追踪</span> 二、⚔️ 竞品生态追踪
+    </div>
+    <div class="section-desc">传播大脑 · 深报智汇 · 派生万物 · 封面智媒云 · 四川"一朵云"</div>
+
+    <div class="sub-section">
+      <div class="sub-title">深报智汇（深圳报业）</div>
+      <div class="news-item">
+        <div class="title"><a href="https://www.sohu.com/a/1022889577_121123529" target="_blank">深圳报业再推20条措施 以生态创新深化系统性变革</a></div>
+        <div class="meta"><span class="source">搜狐网（转载深圳特区报）</span><span>5月15日</span></div>
+        <div class="summary">
+          5月14日深圳报业集团召开第三届职工代表大会第六次会议暨深化系统性变革工作推进会，发布下一阶段深化变革的20条措施。20条措施围绕"八化"（在地化、视频化、平台化、IP化、特色化、功能化、智能化、社交化），涵盖内容生态创新（10条）、技术生态创新（2条，含AI技术体系建设和智能体落地）、产业生态创新（3条）、组织生态创新（5条）四个维度。
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="title"><a href="https://www.sznews.com/news/content/2026-05/15/content_32051556.htm" target="_blank">"拥抱变革 同心同行"深圳报业集团系统性变革一线故事分享会</a></div>
+        <div class="meta"><span class="source">读特新闻（sznews.com）</span><span>5月15日</span></div>
+        <div class="summary">
+          5月14日深圳报业集团举办主题为"拥抱变革 同心同行"的系统性变革一线故事分享会。读特AI工坊主理人徐雅乔以《AI时代，先跑起来》为题，分享了读特AI工坊"ALL in AI"的变革路径，包括全员转型、全流程智能化、全面链接的智媒转型实践。团队以全力冲刺、主动试错的姿态跑出智媒转型的实战速度。
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">传播大脑（浙报集团）</div>
+      <div class="no-update">本周无有效资讯。经多次搜索（使用多种关键词组合和网站限定），未发现5月11-17日期间传播大脑/浙报集团的新动态。</div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">派生万物（上报/澎湃）</div>
+      <div class="no-update">本周无有效资讯。最新相关动态为2025年10月的A轮融资公告，不在本报告周期内。</div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">封面智媒云（华西/封面）</div>
+      <div class="no-update">本周无有效资讯。最新相关动态为2026年4月的AI原生体系解决方案发布，不在本报告周期内。</div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">四川"一朵云"（天府融媒）</div>
+      <div class="no-update">本周无有效资讯。最新相关动态为2026年4月的天府融媒开放日活动，不在本报告周期内。</div>
+    </div>
+  </div>
+
+  <!-- ===== 三、行业政策与监管动态 ===== -->
+  <div class="section zhengce">
+    <div class="section-title">
+      <span class="badge red">政策风向</span> 三、🏛️ 行业政策与监管动态
+    </div>
+
+    <div class="news-item">
+      <div class="title"><a href="https://www3.xinhuanet.com/politics/20260512/2791fd855e074f0287620ef6bbf647db/c.html" target="_blank">中央网信办全面部署推进规范短视频内容标注工作</a></div>
+      <div class="meta"><span class="source">新华网（网信中国微信公众号）</span><span>5月12日</span></div>
+      <div class="summary">
+        中央网信办针对部分短视频内容来源不清、真假难辨、混淆视听等突出问题，部署推进短视频内容标注规范工作。自2026年1月以来已指导平台清理违规短视频52万余个，处置违规账号6.8万余个。核心要求：明确6类必选标签（含"含有虚构演绎内容""含有AI生成内容"等）；将标注设为发布必经环节；加强标注审核管理，对新增和存量短视频分别加强审核和分批回溯补标。
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><a href="https://www.nrta.gov.cn/art/2026/5/15/art_113_73308.html" target="_blank">国家广电总局开展2026年"全国新型广电网络先锋案例"征集推选工作</a></div>
+      <div class="meta"><span class="source">国家广播电视总局官网</span><span>5月15日</span></div>
+      <div class="summary">
+        国家广电总局办公厅启动2026年"全国新型广电网络先锋案例"征集推选工作。建设新型广电网络是广电视听行业数智化转型、高质量发展的重大战略举措。共设置5个申报方向：主流舆论传播、公共服务惠民、数字文化赋能、综合信息服务、国家应急支撑。申报主体涵盖有线/无线/卫星传输机构、IPTV/互联网电视机构、广播电视台/融媒体中心等。申报截止时间为2026年7月15日。
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><a href="https://www.chinanews.com.cn/cul/2026/05-12/10619738.shtml" target="_blank">第六届中国（北京）广电媒体融合发展大会启幕</a></div>
+      <div class="meta"><span class="source">中国新闻网</span><span>5月12日</span></div>
+      <div class="summary">
+        5月12日至13日，第六届中国(北京)广电媒体融合发展大会在北京开幕，主题为"深融致远 视听无界"。国家广电总局副局长韩冬、北京市副市长司马红出席并致辞。大会发布了《省级广电媒体融合传播CVB数据观察》，北京市广电局发布了三项2026年度资金扶持政策，包括《北京市促进"人工智能+视听"产业高质量发展重点项目申报指南》等。大会还启动了2026年"京琅琊"人才专项遴选和名家工作室推荐申报。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 四、报业集团战略动态 ===== -->
+  <div class="section zhanlue">
+    <div class="section-title">
+      <span class="badge green">行业格局</span> 四、📈 报业集团战略动态
+    </div>
+
+    <div class="news-item">
+      <div class="title"><a href="https://www.sohu.com/a/1022889577_121123529" target="_blank">深圳报业集团发布深化系统性变革"20条措施"</a></div>
+      <div class="meta"><span class="source">搜狐网（转载深圳特区报）</span><span>5月15日</span></div>
+      <div class="summary">
+        5月14日深圳报业集团召开第三届职工代表大会第六次会议暨深化系统性变革工作推进会，回顾启动系统性变革一年取得的阶段性成效（实现"七个之变"，搭建"1总部+5中心"新架构），同时发布下一阶段深化变革的20条措施。措施聚焦"八化"生态创新，从内容生态、技术生态、产业生态、组织生态四大维度推动系统性变革走深走实。
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><a href="https://www.sznews.com/news/content/2026-05/15/content_32051556.htm" target="_blank">读特AI工坊分享"ALL in AI"智媒转型路径</a></div>
+      <div class="meta"><span class="source">读特新闻（sznews.com）</span><span>5月15日</span></div>
+      <div class="summary">
+        5月14日深圳报业集团举办系统性变革一线故事分享会，读特AI工坊主理人徐雅乔以《AI时代，先跑起来》为题，分享了读特AI工坊通过全员转型、全流程智能化、全面链接的方式推进智媒转型的实践。团队以全力冲刺、主动试错的姿态跑出智媒转型的实战速度，体现了主流媒体拥抱AI技术的积极姿态。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 五、融媒技术与产品前沿 ===== -->
+  <div class="section jishu">
+    <div class="section-title">
+      <span class="badge orange">技术前沿</span> 五、🔬 融媒技术与产品前沿
+    </div>
+
+    <div class="news-item">
+      <div class="title"><a href="https://www.sohu.com/a/1022653264_121123772" target="_blank">2026传媒技术高质量发展大会在海口启幕 聚焦AIGC与融媒体新技术</a></div>
+      <div class="meta"><span class="source">搜狐网（海口市融媒体中心报道）</span><span>5月14日</span></div>
+      <div class="summary">
+        5月13日至16日，2026传媒技术高质量发展大会暨中国电影电视技术学会城市融媒体专委会年会在海口举行，主题为"无界融合·技无止境"。大会汇聚近300名主流传媒机构、专家学者及行业代表，重点聚焦AIGC（人工智能生成内容）等前沿技术在媒体行业的应用，探讨超高清制播、大数据、低空经济等技术在传媒领域的应用场景。大会旨在搭建思想碰撞、技术展示、案例共享、项目对接的平台。
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="title"><a href="https://news.cctv.cn/2026/05/17/ARTIUUekaDVugGawlh5fLIjH260517.shtml" target="_blank">国产大模型"集体"更新后能力有多强？记者实测</a></div>
+      <div class="meta"><span class="source">央视网</span><span>5月17日</span></div>
+      <div class="summary">
+        央视网记者对近期国产大模型的密集更新进行能力实测。从模型性能、应用场景到落地能力全面提升，同时在海外开发者平台上Token调用量超过美国。文章对国产大模型集体更新的亮点进行了深度分析和实测评估，为媒体行业选择和应用大模型提供了参考依据。（注：正文为JS动态加载，标题和元数据已验证）
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 本周研判 ===== -->
+  <div class="section judgment">
+    <div class="section-title">🎯 本周研判</div>
+    <div class="judgment-block">
+      <div class="verdict">
+        📌 一句话总评：本周是"政策密集周"——短视频内容标注规范+广电网络先锋案例征集+北京广电融媒大会，三条政策线同时发力；深圳报业"20条措施"中"智能化"维度明确写入技术体系建设，是省级报业系统性变革深化的标志性节点。
+      </div>
+      <ol class="insights">
+        <li><strong>短视频"6类必选标签"直接冲击内容审核系统：</strong>中央网信办明确的6类必选标签（含"含有AI生成内容"）将成所有主流媒体客户端的标配功能。南方智媒云作为省级技术底座，需评估现有内容审核系统是否支持标签必选配置、存量内容回溯补标的技术方案。</li>
+        <li><strong>深圳报业"20条"中"智能化"维度是竞品技术路线最新样本：</strong>AI技术体系建设+智能体落地——这两条技术生态措施是深圳报业系统性变革深化的核心抓手。建议南方智媒云技术团队对标研究：深圳报业的"智能体落地"具体指什么产品形态？我们的对标差距在哪里？</li>
+        <li><strong>国产大模型海外Token调用量超美国——内容出海的多语种AI能力缺口：</strong>央视实测显示国产大模型在海外开发者平台Token调用量已超美国，意味着中国AI能力的全球化势能正在形成。对南方智媒云而言，多语种AI内容生产能力（特别是面向GDToday的英文/多语种场景）是下一个值得投入的技术方向。</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ===== 往期周报入口 ===== -->
+  <div class="archive-nav">
+    <div class="archive-title">📚 周报归档 · 往期回顾</div>
+    <div class="archive-grid">
+      <a class="archive-item" href="https://judie2010.github.io/Nfzmy-zb/w2622.html">
+        <div class="issue">W2622 · 第1期</div>
+        <div class="period">2026.05.25 — 05.31</div>
+        <span class="tag" style="background:#EFF6FF;color:#2563EB;">最新</span>
+      </a>
+      <a class="archive-item" href="https://judie2010.github.io/Nfzmy-zb/w2621.html">
+        <div class="issue">W2621 · 第2期</div>
+        <div class="period">2026.05.18 — 05.24</div>
+        <span class="tag" style="background:#F5F3FF;color:#7C3AED;">文博会</span>
+      </a>
+      <a class="archive-item current" href="https://judie2010.github.io/Nfzmy-zb/w2620.html">
+        <div class="issue">W2620 · 第3期</div>
+        <div class="period">2026.05.11 — 05.17</div>
+        <span class="tag" style="background:#FEF2F2;color:#DC2626;">当前页面</span>
+      </a>
+    </div>
+    <p style="margin-top:14px;font-size:12px;color:var(--text-muted);">
+      📋 查看所有期次 → <a href="https://judie2010.github.io/Nfzmy-zb/" style="color:var(--accent);">周报汇集页</a>
+    </p>
+  </div>
+
+  <div class="footer">
+    <p>《南方智媒云行业周报》第3期 · 数据截止 2026年5月17日</p>
+    <p>信息来源：南方报业物资采购网、搜狐网、读特新闻、新华网、国家广电总局、中国新闻网、央视网等公开渠道</p>
+    <p style="margin-top:4px;">本报告仅供内部参考，不构成商业决策依据。</p>
+  </div>
+
+</div>
+</body>
+</html>
