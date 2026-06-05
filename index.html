@@ -1,63 +1,252 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="南方智媒云行业周报 W2622期">
-  <meta property="og:description" content="聚焦南方智媒云及其竞品生态，追踪报业融媒技术前沿">
-  <meta property="og:image" content="https://judie2010.github.io/Nfzmy-zb/og-image.png">
-  <meta property="og:url" content="https://judie2010.github.io/Nfzmy-zb/?v=W2622">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>南方智媒云行业周报</title>
-  <style>
-    * { margin:0; padding:0; box-sizing: border-box; }
-    body { font-family: -apple-system, 'PingFang SC', sans-serif; background: #f0f4f8; color: #1a1a2e; }
-    .header { background: linear-gradient(135deg, #1B3A5C 0%, #2d6a9f 100%); color: white; padding: 40px 24px; text-align: center; }
-    .header h1 { font-size: 28px; font-weight: 700; letter-spacing: 1px; }
-    .header p { font-size: 14px; opacity: 0.85; margin-top: 8px; }
-    .latest { max-width: 600px; margin: 32px auto; padding: 0 20px; }
-    .latest h2 { font-size: 18px; color: #1B3A5C; border-left: 4px solid #4A90D9; padding-left: 12px; margin-bottom: 16px; }
-    .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-    .card h3 { font-size: 16px; color: #1B3A5C; margin-bottom: 8px; }
-    .card .meta { font-size: 12px; color: #888; margin-bottom: 12px; }
-    .card .desc { font-size: 14px; color: #444; line-height: 1.6; }
-    .card a { display: inline-block; margin-top: 12px; color: #4A90D9; text-decoration: none; font-size: 14px; }
-    .archive { max-width: 600px; margin: 32px auto; padding: 0 20px 60px; }
-    .archive h2 { font-size: 18px; color: #1B3A5C; border-left: 4px solid #4A90D9; padding-left: 12px; margin-bottom: 16px; }
-    .archive-item { background: white; border-radius: 8px; padding: 14px 18px; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; }
-    .archive-item .date { font-size: 14px; color: #333; }
-    .archive-item .period { font-size: 12px; color: #888; }
-    .archive-item a { font-size: 13px; color: #4A90D9; text-decoration: none; }
-    .footer { text-align: center; padding: 24px; font-size: 12px; color: #aaa; background: #f0f4f8; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>南方智媒云行业周报 · 汇集页</title>
+
+<!-- OG Tags for WeChat share card -->
+<meta property="og:title" content="南方智媒云行业周报 W2622期">
+<meta property="og:description" content="聚焦南方智媒云及其竞品生态，追踪报业融媒技术前沿">
+<meta property="og:image" content="https://judie2010.github.io/Nfzmy-zb/og-image.png">
+<meta property="og:url" content="https://judie2010.github.io/Nfzmy-zb/?v=W2622">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="南方智媒云行业周报">
+
+<style>
+  :root {
+    --bg: #F8FAFC;
+    --card-bg: #FFFFFF;
+    --text: #1A1A2E;
+    --text-secondary: #5A5A7A;
+    --text-muted: #8E8EA0;
+    --border: #E8EAF0;
+    --primary: #1B3A5C;
+    --accent: #6366f1;
+    --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 16px;
+    min-height: 100vh;
+  }
+  .container { max-width: 760px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 40px 28px 32px;
+    background: linear-gradient(135deg, #1B3A5C 0%, #2D5A8E 100%);
+    color: #fff;
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 200px; height: 200px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+  }
+  .header .logo { font-size: 32px; margin-bottom: 10px; }
+  .header h1 { font-size: 24px; font-weight: 700; letter-spacing: 1px; margin-bottom: 6px; }
+  .header .subtitle { font-size: 13px; opacity: 0.75; }
+
+  /* Latest issue card */
+  .latest-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border);
+    border-left: 4px solid #6366f1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s;
+    color: var(--text);
+  }
+  .latest-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(99,102,241,0.15);
+  }
+  .latest-card .latest-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6366f1;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .latest-card .issue-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 6px;
+  }
+  .latest-card .issue-period {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+  }
+  .latest-card .issue-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+  .latest-card .read-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .latest-card .stats {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .latest-card .stat { font-size: 12px; color: var(--text-muted); }
+  .latest-card .stat strong { color: var(--primary); font-size: 16px; margin-right: 3px; }
+
+  /* Archive section */
+  .section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding-left: 2px;
+  }
+
+  .archive-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+
+  .archive-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 16px 20px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.2s;
+    color: var(--text);
+  }
+  .archive-card:hover {
+    border-color: var(--accent);
+    background: #FAFBFF;
+    transform: translateX(3px);
+  }
+  .archive-card .issue-num {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    background: #F0F0FF;
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .archive-card .info { flex: 1; }
+  .archive-card .info .title { font-size: 15px; font-weight: 600; color: var(--primary); }
+  .archive-card .info .period { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .archive-card .arrow { font-size: 16px; color: var(--text-muted); }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-muted);
+    font-size: 13px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    border: 1px dashed var(--border);
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  @media (max-width: 480px) {
+    .header { padding: 28px 16px; }
+    .header h1 { font-size: 20px; }
+    .latest-card { padding: 18px; }
+    .latest-card .issue-title { font-size: 17px; }
+    .archive-card { padding: 14px; }
+  }
+</style>
 </head>
 <body>
+<div class="container">
 
-<div class="header">
-  <h1>📊 南方智媒云行业周报</h1>
-  <p>聚焦南方智媒云及其竞品生态 · 追踪报业融媒技术前沿</p>
-</div>
-
-<div class="latest">
-  <h2>📅 最新一期</h2>
-  <div class="card">
-    <h3>W2622期（2026/05/25 - 05/31）</h3>
-    <div class="meta">生成时间：2026-06-01 08:00 · 第22周</div>
-    <div class="desc">南方智媒云动态、竞品追踪、行业政策、报业战略、技术前沿——五大部分完整呈现……</div>
-    <a href="https://judie2010.github.io/Nfzmy-zb/w2622.html">📖 阅读完整周报 →</a>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">📰</div>
+    <h1>南方智媒云行业周报</h1>
+    <div class="subtitle">聚焦南方智媒云及其竞品生态，追踪报业融媒技术前沿 · 每周一早8点更新</div>
   </div>
-</div>
 
-<div class="archive">
-  <h2>📚 历史周报</h2>
-  <!-- 后续周报将在此自动追加 -->
-</div>
+  <!-- Latest Issue -->
+  <p class="section-title">▶ 最新一期</p>
+  <a class="latest-card" href="https://judie2010.github.io/Nfzmy-zb/w2622.html">
+    <div class="latest-label">🆕 最新发布</div>
+    <div class="issue-title">W2622期 · 第1期</div>
+    <div class="issue-period">📅 2026年5月25日（周一）— 5月31日（周日）</div>
+    <div class="issue-desc">
+      本周是中国报业融媒"系统性变革"从政策共识走向全行业行动的关键一周——武汉论坛定调"向新向优"、文博会验证"AI全域渗透"、莫干山对话凝聚"拆墙共识"。
+    </div>
+    <div>
+      <span class="read-btn">📖 阅读本期周报 →</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>18</strong>条资讯</div>
+      <div class="stat"><strong>5</strong>大竞品追踪</div>
+      <div class="stat"><strong>2</strong>高规格行业会议</div>
+      <div class="stat"><strong>5</strong>版块覆盖</div>
+    </div>
+  </a>
 
-<div class="footer">
-  南方智媒云行业周报 · 由 WorkBuddy 自动生成<br>
-  每周一早8:00推送
-</div>
+  <!-- Archive -->
+  <p class="section-title">📚 往期回顾</p>
+  <div class="archive-list">
+    <a class="archive-card" href="https://judie2010.github.io/Nfzmy-zb/w2622.html">
+      <span class="issue-num">W2622</span>
+      <div class="info">
+        <div class="title">第1期 · 文博会AI全域渗透，媒体融合提速</div>
+        <div class="period">2026.05.25 — 05.31 | 18条资讯</div>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+    <!-- 后续每期由自动化任务追加 -->
+  </div>
 
+  <!-- Footer -->
+  <div class="footer">
+    <p>《南方智媒云行业周报》由融媒技术研发团队每周自动生成</p>
+    <p>数据来源：人民日报、新华社、国家网信办、深圳新闻网、观媒网等公开渠道</p>
+    <p>本报告仅供内部参考</p>
+  </div>
+
+</div>
 </body>
 </html>
