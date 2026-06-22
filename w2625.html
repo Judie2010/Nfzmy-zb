@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>南方智媒云行业周报 W2625 | 2026.06.15-06.21</title>
+
+<!-- OG Tags for WeChat share card -->
+<meta property="og:title" content="南方智媒云行业周报 W2625">
+<meta property="og:description" content="本周共收录 22 条资讯，覆盖 5 大版块。南方智媒云资质年审采购同期落地；中科闻歌港股招股、智谱 GLM-5.2 开源、AI 眼镜深圳展三线齐发。">
+<meta property="og:image" content="https://judie2010.github.io/Nfzmy-zb/og-image.png">
+<meta property="og:url" content="https://judie2010.github.io/Nfzmy-zb/w2625.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="南方智媒云行业周报">
+
+<style>
+  :root {
+    --bg: #F8FAFC;
+    --card-bg: #FFFFFF;
+    --text: #1A1A2E;
+    --text-secondary: #5A5A7A;
+    --text-muted: #8E8EA0;
+    --border: #E8EAF0;
+    --primary: #1B3A5C;
+    --accent: #6366F1;
+    --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 16px;
+    min-height: 100vh;
+  }
+  .container { max-width: 760px; margin: 0 auto; }
+
+  .header {
+    text-align: center;
+    padding: 36px 28px 28px;
+    background: linear-gradient(135deg, #1B3A5C 0%, #2D5A8E 100%);
+    color: #fff;
+    border-radius: var(--radius);
+    margin-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: \'\';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 220px; height: 220px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+  }
+  .header .issue-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+  }
+  .header h1 { font-size: 24px; font-weight: 700; letter-spacing: 1px; margin-bottom: 6px; }
+  .header .meta { font-size: 13px; opacity: 0.85; }
+  .header .badges { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .header .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.4);
+  }
+
+  .toc {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    margin-bottom: 18px;
+    border: 1px solid var(--border);
+  }
+  .toc h3 { font-size: 14px; margin-bottom: 10px; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
+  .toc ol { padding-left: 22px; font-size: 14px; }
+  .toc li { margin: 4px 0; }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+
+  .section {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+  }
+  .section.tier1 { border-left-color: #C8102E; }
+  .section.tier2 { border-left-color: #E8590C; }
+  .section.tier3 { border-left-color: #D4A017; }
+  .section.tier4 { border-left-color: #2D8F3E; }
+  .section.tier5 { border-left-color: #1E6FD9; }
+
+  .section-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+  .section-head h2 { font-size: 18px; color: var(--primary); }
+  .tier-tag {
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .tier1-tag { background: #C8102E; }
+  .tier2-tag { background: #E8590C; }
+  .tier3-tag { background: #D4A017; }
+  .tier4-tag { background: #2D8F3E; }
+  .tier5-tag { background: #1E6FD9; }
+
+  .news-item { padding: 14px 0; border-bottom: 1px dashed #EEE; }
+  .news-item:last-child { border-bottom: none; }
+  .news-title { font-size: 15.5px; font-weight: 600; margin-bottom: 6px; line-height: 1.5; }
+  .news-title a { color: var(--text); text-decoration: none; }
+  .news-title a:hover { color: var(--accent); text-decoration: underline; }
+  .news-meta { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+  .news-meta .date {
+    background: #F0F0F0;
+    padding: 1px 8px;
+    border-radius: 4px;
+    margin-right: 6px;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+  .news-summary { font-size: 13.5px; color: var(--text-secondary); line-height: 1.7; }
+  .highlight {
+    background: #FFFBE6;
+    border-left: 3px solid #FAAD14;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 10px 0 14px;
+    font-size: 13px;
+    color: #5A4A00;
+  }
+  .pill {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    background: #F0F5FF;
+    color: #1E6FD9;
+    margin-right: 4px;
+  }
+  .pill.red { background: #FFF1F0; color: #C8102E; }
+  .pill.green { background: #F6FFED; color: #2D8F3E; }
+  .pill.orange { background: #FFF7E6; color: #E8590C; }
+  .pill.gold { background: #FFFBE6; color: #D4A017; }
+
+  .summary-box {
+    background: linear-gradient(135deg, #F0F4FF 0%, #FAFBFF 100%);
+    border: 1px solid #E0E5F5;
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin: 18px 0 16px;
+  }
+  .summary-box h3 { font-size: 16px; color: var(--primary); margin-bottom: 10px; }
+  .summary-box p { font-size: 13.5px; color: var(--text-secondary); margin-bottom: 8px; }
+  .summary-box ul { margin-left: 22px; margin-top: 6px; }
+  .summary-box li { font-size: 13.5px; color: var(--text-secondary); margin: 4px 0; }
+
+  .archive-nav {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin: 18px 0;
+    border: 1px solid var(--border);
+  }
+  .archive-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+  }
+  .archive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 600px) {
+    .archive-grid { grid-template-columns: 1fr; }
+  }
+  .archive-item {
+    background: #F8FAFC;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.2s;
+    display: block;
+    position: relative;
+  }
+  .archive-item:hover {
+    border-color: var(--accent);
+    background: #FAFBFF;
+    transform: translateY(-2px);
+  }
+  .archive-item.current {
+    background: linear-gradient(135deg, #F0F4FF 0%, #E8EFFF 100%);
+    border-color: var(--accent);
+  }
+  .archive-item .issue {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 4px;
+  }
+  .archive-item .period {
+    font-size: 11.5px;
+    color: var(--text-muted);
+  }
+  .archive-item .tag {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: #FFF;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+  }
+  .archive-item.current .tag {
+    background: var(--accent);
+    color: #FFF;
+    border-color: var(--accent);
+  }
+
+  .footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 12px;
+    margin-top: 24px;
+    padding: 18px;
+    line-height: 1.9;
+  }
+
+  @media (max-width: 480px) {
+    .header { padding: 28px 16px; }
+    .header h1 { font-size: 20px; }
+    .section { padding: 18px 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="issue-badge">W2625</div>
+    <h1>南方智媒云行业周报</h1>
+    <div class="meta">统计周期：2026年6月15日 — 6月21日 ｜ 数据截止 2026年6月21日</div>
+    <div class="badges">
+      <span class="badge">5 大圈层</span>
+      <span class="badge">7 大板块</span>
+      <span class="badge">22 条资讯</span>
+      <span class="badge">GitHub Pages 自动托管</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h3>本期目录</h3>
+    <ol>
+      <li><a href="#t1">🔥 南方智媒云动态（体系内）</a></li>
+      <li><a href="#t2">📰 南方新闻网动态（兄弟公司）</a></li>
+      <li><a href="#t3">⚔️ 竞品生态追踪（8 家）</a></li>
+      <li><a href="#t4">🔧 融媒技术供应商观察</a></li>
+      <li><a href="#t5">🏛️ 行业政策与监管动态</a></li>
+      <li><a href="#t6">📈 报业集团战略动态</a></li>
+      <li><a href="#t7">🔬 融媒技术与产品前沿</a></li>
+      <li><a href="#summary">📌 本周研判</a></li>
+    </ol>
+  </div>
+
+  <!-- 一圈：南方智媒云 -->
+  <section class="section tier1" id="t1">
+    <div class="section-head">
+      <span class="tier-tag tier1-tag">一圈</span>
+      <h2>🔥 南方智媒云动态</h2>
+    </div>
+    <div class="highlight">本周窗口内，南方智媒云处于"内部能力沉淀"阶段：5月底启动的"云端砺剑（二）"特训营八期课程持续推进；6/17 启动 <strong>2026 年度资质认证及年审服务项目</strong>采购（10项资质），同步推进 ISO 9001/CCRC 等关键资质布局；5/21 入选"全国成长性文化企业 30 强"的后续品牌效应仍在延续。</div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://jtcg.southcn.com/node_059a3c5977/6bb8bb13a2.shtml" target="_blank">南方智媒科技发布 2026 年度资质认证及年审服务项目采购公告</a></div>
+      <div class="news-meta"><span class="date">2026-06-17</span> <span class="pill red">南方智媒科技</span> <span class="pill">资质</span> <span class="pill orange">招标</span></div>
+      <div class="news-summary">6/17 南方智媒科技在南方报业物资采购网发布采购公告，对 ISO 9001 等 5 项资质（首次新认证）+ CCRC 等 5 项资质（年审）共 10 项资质认证及年审服务进行采购。报价截止 6/25 17:00。本次集中采购是公司"AI+主流媒体系统性变革"能力体系的关键资质布局，为后续政务、文旅、能源等跨行业拓展夯实合规底座。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://www.sohu.com/a/1029773499_100116740" target="_blank">"云端砺剑（二）"系统性变革特训营持续推进：八期课程解锁 AI 赋能媒体应用</a></div>
+      <div class="news-meta"><span class="date">2026-05-29 启动 · 本周进行中</span> <span class="pill red">南方报业</span> <span class="pill orange">AI 培训</span></div>
+      <div class="news-summary">5/29 南方报业传媒集团启动"云端砺剑（二）"系统性变革特训营，以"AI 应用"为主题。本轮培训于 5 月底至 7 月集中开展，共八期课程，6/15-6/21 窗口内处于第一/二期课程进行中。课程体系涵盖大模型、智能体、AI 内容生产等方向，旨在"全员砺剑"提升集团媒体融合与系统性变革的实操能力。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://static.nfnews.com/content/202605/21/c12451235.html" target="_blank">南方智媒科技入选"2026 全国成长性文化企业 30 强"后续品牌效应持续</a></div>
+      <div class="news-meta"><span class="date">2026-05-21 · 品牌长尾期</span> <span class="pill red">南方智媒科技</span> <span class="pill">荣誉</span></div>
+      <div class="news-summary">5/21 在中宣部主办的 2026 文化强国建设高峰论坛（深圳）上，南方智媒科技入选"2026 全国成长性文化企业 30 强"。南方智媒云已拓展至政务、文旅、能源等多个行业及省外单位，累计获 24 项专利、119 件软件著作权及 11 项国内外资质认证。本周窗口内该事件品牌效应仍在延续，南方+、南都 N 视频等核心产品下载量保持高位增长。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title">南方智媒云多线技术采购同期推进：兼容性测试 / AI 鉴真 / 网络安全 / 幻觉治理</div>
+      <div class="news-meta"><span class="date">2026 Q2 滚动推进</span> <span class="pill red">南方智媒云</span> <span class="pill">招标</span></div>
+      <div class="news-summary">除本期 6/17 发布的资质认证采购外，南方智媒云技术升级多线并行：6/12 发布的"大模型因果推理增强与幻觉治理技术服务"（针对南方智媒云大模型的事实性/逻辑性幻觉问题）、2026 年兼容性测试服务、AI 鉴真自主鉴别能力升级、2026 年度网络安全技术支撑服务等系列采购陆续推进，覆盖大模型、内容安全、基础设施三大方向。</div>
+    </div>
+  </section>
+
+  <!-- 南方新闻网 -->
+  <section class="section tier1" id="t2">
+    <div class="section-head">
+      <span class="tier-tag tier1-tag">一圈</span>
+      <h2>📰 南方新闻网动态</h2>
+    </div>
+    <div class="highlight">本周窗口内，南方新闻网直接动态较少（处于"日常运营+前期中标后续"阶段），但其 5/30 揭牌的南方媒体融合与数字创意实验室已转入常态化运营，6/19-21 端午期间"粤学习"客户端推出系列广东文化主题内容，与南方+形成内容协同。</div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://m.nfnews.com/" target="_blank">南方新闻网端午融媒报道：南方+、粤学习、South 多端协同</a></div>
+      <div class="news-meta"><span class="date">2026-06-19 至 06-21</span> <span class="pill red">南方新闻网</span> <span class="pill">端午报道</span></div>
+      <div class="news-summary">6/19-21 端午假期，南方新闻网联合南方+、粤学习、South 等多端推出"请到广东过端午"主题融媒报道，涵盖龙舟赛事、文旅消费、岭南文化等。粤学习客户端作为政务学习平台与青少年文化教育入口持续迭代，与南方+客户端形成"民生+学习"双引擎的内容协同矩阵。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://zbtb.southcn.com/node_5734304c40" target="_blank">南方新闻网 2026 年数字产品客服支持服务项目完成中标（窗口前已落地）</a></div>
+      <div class="news-meta"><span class="date">2026-06-03 中标公示 · 持续执行</span> <span class="pill red">南方新闻网</span> <span class="pill">中标</span></div>
+      <div class="news-summary">6/3 南方新闻网体系完成 2026 年数字产品客服支持服务项目中标候选人公示，项目支持南方+、粤学习、南方云媒等数字产品的客服体系。南方云媒平台已为 809 个党政网站、6707 个政务新媒体、3 万多名后台用户提供技术支撑，每日生产发布稿件超 6 万篇，积累高质量内容数据超 700T，是南方新闻网体系的核心技术资产。</div>
+    </div>
+  </section>
+
+  <!-- 二圈：竞品生态 -->
+  <section class="section tier2" id="t3">
+    <div class="section-head">
+      <span class="tier-tag tier2-tag">二圈</span>
+      <h2>⚔️ 竞品生态追踪</h2>
+    </div>
+    <div class="highlight">本周窗口内，二圈整体处于"能力建设与新动作酝酿"阶段：四川天府融媒大讲堂+天府人工智能产业生态发布会预告"两弹连发"；华栖云官网更新"华生大模型"产品矩阵；派生万物 6/10 完成"开放平台"改版（窗口前），其上海主体公司估值与业务版图在静默扩张。</div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://www.sc.gov.cn/10462/10464/10797/2026/6/16/9957f72df3394ecfa344be17b5ccc4ea.shtml" target="_blank">四川天府融媒：2026 天府人工智能产业生态暨产品发布会 6/25 召开预告</a></div>
+      <div class="news-meta"><span class="date">2026-06-15 官宣</span> <span class="pill orange">四川"一朵云"</span> <span class="pill orange">天府融媒</span></div>
+      <div class="news-summary">6/15 四川省人工智能产业链链长办公室发布预告：6/25 将在成都举行"2026 天府人工智能产业生态暨产品发布会"，主题"场景牵引、以用促产"。将发布四川 AI 产业链专项政策、重大标志性应用场景和链主企业、应用场景机会清单。四川"一朵云"技术底座（天府融媒联合体主导，省财政 1.38 亿元支持）将集中亮相。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://www.chinamcloud.com/" target="_blank">华栖云官网更新："华生大模型"驱动 AIGC 工具矩阵亮相</a></div>
+      <div class="news-meta"><span class="date">2026-06-15 官网更新</span> <span class="pill orange">华栖云</span> <span class="pill">大模型</span></div>
+      <div class="news-summary">华栖云官网 6/15 前后更新产品矩阵，自研"华生大模型"驱动 5000+ 自研算法、数百专业模型，已应用于"智变观澜""依案成片""数字分身"等 AIGC 工具，覆盖 4K/8K 超高清处理、视频超分、智能审核、广电级渲染等核心场景。同时推出"智课""智师""智创"等高校 AI 教学产品，AI+大教育板块持续扩展。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title">派生万物"开放平台"完成改版，澎湃技术能力持续对外输出</div>
+      <div class="news-meta"><span class="date">2026-06-10 · 持续运营</span> <span class="pill orange">派生万物</span> <span class="pill">开放平台</span></div>
+      <div class="news-summary">上海派生万物智能科技 6/10 完成 pai-tech.com.cn 开放平台改版升级。派生万物是澎湃新闻旗下独立技术品牌（2024 年成立独立公司），依托澎湃新闻十年媒体转型经验，对外输出全媒体内容生态建设的一站式解决方案（内容生产、审核、分发全链路）。本周窗口内企业工商信息有更新，估值与业务版图在静默扩张。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title">传播大脑 / 深报智汇 / 封面智媒云 / 思拓合众 / 凡闻科技——本周无重大更新</div>
+      <div class="news-meta"><span class="date">2026-06-15 至 06-21</span> <span class="pill orange">多家竞品</span></div>
+      <div class="news-summary">传播大脑（浙报集团）：核心节点 1/28"178 方案"+ NewsPower 引擎发布后处于能力输出阶段，本周无新发布。深报智汇（深圳报业）：5/15 推出"系统性变革 20 条"+ GEO 布局后处于方案落地期。封面智媒云（华西/封面）：智媒云大模型+11.0 客户端已稳定运营。凡闻科技、思拓合众：本周窗口内无重大公开动态。</div>
+    </div>
+  </section>
+
+  <!-- 三圈：融媒技术供应商 -->
+  <section class="section tier3" id="t4">
+    <div class="section-head">
+      <span class="tier-tag tier3-tag">三圈</span>
+      <h2>🔧 融媒技术供应商观察</h2>
+    </div>
+    <div class="highlight">本周三圈有两条值得高度关注的信号：<strong>6/15 拓尔思在互动平台公开"拓天大模型+智能体"在政务领域的纵深布局</strong>（与南方智媒云"南方 AI 智能体"形成正面对照）；<strong>6/17 银川市新闻传媒中心全媒体智能采编传播中枢中标公告</strong>显示老牌供应商仍在积极卡位地市级融媒主战场。</div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://finance.sina.com.cn/stock/relnews/cn/2026-06-15/doc-inicnuht5000287.shtml" target="_blank">拓尔思 6/15 投资者互动：拓天大模型+智能体在政务领域纵深布局</a></div>
+      <div class="news-meta"><span class="date">2026-06-15</span> <span class="pill gold">拓尔思</span> <span class="pill">大模型</span> <span class="pill orange">智能体</span></div>
+      <div class="news-summary">6/15 拓尔思（300229.SZ）在互动平台披露：拓天大模型+舆情/数字办公/政务服务三类细分场景智能体已深度应用于自然资源部、住建部、海关总署、贵州省等中央及地方政府机构，并在贵州、云南、深圳等地落地。技术体系覆盖"底座-平台-应用"三层，以"决策智能"为核心，呼应《政务领域人工智能大模型部署应用指引》。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202606/t20260617_26770890.htm" target="_blank">银川市新闻传媒中心全媒体智能采编传播中枢中标：北大方正电子 348.5 万中标，索贝参标居第二</a></div>
+      <div class="news-meta"><span class="date">2026-06-17</span> <span class="pill gold">索贝</span> <span class="pill gold">融媒中枢</span> <span class="pill">中标</span></div>
+      <div class="news-summary">6/17 银川市新闻传媒中心全媒体智能采编传播中枢项目公布中标结果：总金额 363.15 万元。一标段（软件集成实施服务，348.5 万）由北京北大方正电子中标；索贝以 86.4 分（次高分）参与投标未中标；二标段（等保测评及密评服务，14.65 万）由宁夏网信创安中标。索贝在地市级融媒主战场仍保持积极卡位态势。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title">中科大洋 / 新奥特 / 捷成世纪 / 影谱科技——本周窗口内无重大公开中标或新品发布</div>
+      <div class="news-meta"><span class="date">2026-06-15 至 06-21</span> <span class="pill gold">多家供应商</span></div>
+      <div class="news-summary">中科大洋、新奥特、捷成世纪、影谱科技本周窗口内无重大公开动态（招投标网可见零星条目但未在公开新闻渠道发酵）。建议关注 6/25-30 期间即将到来的广电行业招投标密集期，以及 7 月各厂商年中战略发布窗口。</div>
+    </div>
+  </section>
+
+  <!-- 五圈：行业政策 -->
+  <section class="section tier5" id="t5">
+    <div class="section-head">
+      <span class="tier-tag tier5-tag">五圈</span>
+      <h2>🏛️ 行业政策与监管动态</h2>
+    </div>
+    <div class="highlight">6/3 广电总局"引领工程"启动的影响仍在发酵（窗口前 2 周），本周窗口内政策侧主要延续前期的算力网建设、AI 治理、大模型备案三大方向；6/17 WAIC 2026 倒计时 30 天发布会预告 7/17-20 上海大会议程，对融媒技术选型有直接风向标意义。</div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://www.nrta.gov.cn/art/2026/6/3/art_114_73403.html" target="_blank">广电总局"广播电视主流媒体系统性变革引领工程"持续推进</a></div>
+      <div class="news-meta"><span class="date">2026-06-03 启动 · 持续推进</span> <span class="pill">广电总局</span> <span class="pill">政策</span></div>
+      <div class="news-summary">6/3 国家广电总局启动"广播电视主流媒体系统性变革引领工程"，以"内容一体化生产、传播一体化布局、技术一体化支撑"为核心。聚焦培育具有创新性、突破性、成长性、引领性的项目。本期窗口内该工程进入实施推进期，南方报业、浙报、深圳报业等省级广电/报业集团均在引领工程框架下加速 AI 能力建设。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://news.cctv.com/2026/06/17/ARTIsLfWMTkZMEIcS4SkjdmV260617.shtml" target="_blank">WAIC 2026 倒计时 30 天发布会：超 300 款 AI 产品将全球首发，7/17-20 上海召开</a></div>
+      <div class="news-meta"><span class="date">2026-06-17</span> <span class="pill">WAIC 2026</span> <span class="pill orange">行业风向标</span></div>
+      <div class="news-summary">6/17 国新办宣布 2026 世界人工智能大会（WAIC 2026）将于 7/17-20 在上海举办，主题"智能伙伴、共创未来"。超 300 款 AI 产品将全球首发，首次创办"WAIC Academic"高水平国际学术会议（由图灵奖得主姚期智等领衔）。本届 WAIC 是下半年 AI 行业最重要风向标，对融媒技术选型（智能体、内容生成、决策大模型）有直接参考价值。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_c864f8e08d7a4120bacae79260add934.html" target="_blank">工信部《"人工智能+信息通信"创新发展实施意见（2026—2028 年）》政策延续效应</a></div>
+      <div class="news-meta"><span class="date">2026-06-03 发布 · 持续生效</span> <span class="pill">工信部</span> <span class="pill">政策</span></div>
+      <div class="news-summary">6/3 工信部发布《"人工智能+信息通信"创新发展实施意见（2026—2028 年）》（工信部通信〔2026〕121 号），推动 AI 与信息通信融合创新。本期窗口内中国移动在原生拨号界面陆续上线通话字幕、AI 防诈、降噪通话等免费 AI 能力，是政策落地的典型案例。广电/报业融媒技术研发可参考此方向探索"通信+AI+内容"组合应用。</div>
+    </div>
+  </section>
+
+  <!-- 五圈：报业集团战略 -->
+  <section class="section tier5" id="t6">
+    <div class="section-head">
+      <span class="tier-tag tier5-tag">五圈</span>
+      <h2>📈 报业集团战略动态</h2>
+    </div>
+    <div class="highlight">央媒侧：2026 媒体融合发展论坛（武汉 5/26 开幕）的传播长尾仍在持续，人民日报系《坚持创新 塑造主流舆论新格局》系列文章在 6/12 持续刊发；地方报业侧：湖南经视 5/1 启用的 AI 主播"声声""双双"进入常态化运营，是广电"AI 主播普及化"的标志性案例。</div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://news.qq.com/rain/a/20260614A02Z6V00" target="_blank">数字人主播遍地落地：媒体智能化转型不止于一张虚拟面孔</a></div>
+      <div class="news-meta"><span class="date">2026-06-14</span> <span class="pill">行业趋势</span> <span class="pill orange">数字人</span></div>
+      <div class="news-summary">6/14 腾讯新闻发表深度报道：数字人主播已从"地方融媒体尝鲜"全面进入"省级广电常态化"。湖南经视《经视新闻》5/1 启用的 AI 主播"声声""双双"（负责非时政资讯、天气播报）已实现与真人主播的常态化协同；安徽新闻联播 2026 两会期间推出虚拟主播"小百惠"（多语种、多方言播报）。技术路径从"形象复刻"升级到"智能生成+实时交互"。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="http://media.people.com.cn/GB/22114/462214/index.html" target="_blank">2026 媒体融合发展论坛（武汉）后续报道：AI 赋能+国际传播亮点持续释放</a></div>
+      <div class="news-meta"><span class="date">2026-06-15 · 论坛长尾</span> <span class="pill">央媒</span> <span class="pill">论坛</span></div>
+      <div class="news-summary">5/26 开幕的 2026 媒体融合发展论坛（武汉）传播长尾进入 6/15 周。论坛期间推出的"出圈了！中国"国际传播项目、AI 戏剧《AI 上黄鹤楼》、人民网"媒体语料服务平台"（主流价值语料库 9600 万+ 篇、79 万问答对）等成果进入深度解读期。人民日报 6/12 发表《坚持创新 塑造主流舆论新格局》系列文章。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title">"国家算力网"作为新基建"六张网"之一持续推进，央企智能算力规模翻倍</div>
+      <div class="news-meta"><span class="date">2026-06-17 公布</span> <span class="pill">新基建</span> <span class="pill">算力</span></div>
+      <div class="news-summary">6/17 国新办 WAIC 倒计时发布会上披露："国家算力网"作为新基建"六张网"之一开启万亿级投资周期，央企智能算力规模持续翻倍。对融媒技术研发意义重大：南方智媒云大模型训练、智媒云盾内容审核、智能体推理等场景可优先申请央企算力底座资源，是降低自建算力成本的关键路径。</div>
+    </div>
+  </section>
+
+  <!-- 五圈：融媒技术与产品前沿 -->
+  <section class="section tier5" id="t7">
+    <div class="section-head">
+      <span class="tier-tag tier5-tag">五圈</span>
+      <h2>🔬 融媒技术与产品前沿</h2>
+    </div>
+    <div class="highlight">本周窗口是 2026 年 AI 行业"标志性事件密集期"：6/16 DeepSeek 完成 500 亿元首轮融资（创中国 AI 纪录）、6/17 智谱开源 GLM-5.2（万亿港元市值里程碑）、6/17 中科闻歌启动港股招股（"决策大模型第一股"）、6/16-18 深圳 AI 眼镜展。十亿级国产开源大模型对媒体垂类应用场景的渗透正在加速。</div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://new.qq.com/rain/a/20260617A02RZH00" target="_blank">智谱 6/17 开源 GLM-5.2：753B 参数 MoE 模型，1M 上下文，国产算力 Day 0 适配</a></div>
+      <div class="news-meta"><span class="date">2026-06-17</span> <span class="pill">智谱</span> <span class="pill orange">开源大模型</span></div>
+      <div class="news-summary">6/17 智谱（02513.HK）正式上线并开源 GLM-5.2：753B 参数 MoE 架构、1M 无损上下文、强化 Coding 能力（Code Arena 全球第一）、Day 0 适配华为昇腾/平头哥/摩尔线程/寒武纪/昆仑芯/沐曦/海光/壁仞等国产算力平台，MIT 协议开源。智谱 6/18 收盘 2094 港元，距万亿港元市值仅一步之遥，是国产开源大模型+国产算力协同的里程碑事件。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://www.aisort.net/ai_news/20260615/deepseek-50b-financing/" target="_blank">DeepSeek 6/16 完成首轮超 500 亿元融资，估值突破 500 亿美元</a></div>
+      <div class="news-meta"><span class="date">2026-06-16</span> <span class="pill">DeepSeek</span> <span class="pill orange">融资</span></div>
+      <div class="news-summary">6/16 DeepSeek 完成成立近三年来的首轮外部融资，规模约 510 亿元人民币（约 70 亿美元），投后估值突破 500 亿美元，刷新国产大模型单轮融资纪录。创始人梁文锋个人出资 200 亿元领投，腾讯、宁德时代、网易、京东、IDG 资本等参投。资金主要用于算力采购、大模型迭代及海内外市场拓展。对融媒技术选型意义：DeepSeek 开源生态仍是性价比首选底座。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://finance.eastmoney.com/a/202606173774310560.html" target="_blank">中科闻歌 6/17 港股招股：发售价 60.70 港元/股，6/26 上市，"决策大模型第一股"</a></div>
+      <div class="news-meta"><span class="date">2026-06-17</span> <span class="pill">中科闻歌</span> <span class="pill orange">上市</span></div>
+      <div class="news-summary">6/17 中科闻歌（01956.HK）正式启动港股招股，发售价 60.70 港元/股，IPO 市值约 105.1 亿港元，6/26 在港交所主板挂牌。公司由中国科学院自动化所科学家团队 2017 年创立，以"通用决策大模型"为核心定位，旗下 Decitron 决策机在媒体、政务等复杂信息场景起家。对融媒技术选型意义：决策智能正成为大模型赛道新分水岭，与南方智媒云 AI 智能体路径高度相关。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://finance.eastmoney.com/a/202606183776523449.html" target="_blank">深圳 6/16-18 首届 AI 眼镜展：超 80% 供应链在中国，年内出货量近百万台</a></div>
+      <div class="news-meta"><span class="date">2026-06-16 至 06-18</span> <span class="pill">AI 硬件</span> <span class="pill orange">智能终端</span></div>
+      <div class="news-summary">6/16-18 第四届深圳国际眼镜业博览会暨 2026 首届人工智能眼镜展在深圳举办。超 300 家参展、展览面积 2.25 万㎡。雷鸟、华为、中兴等 10 家头部企业签署《AI 眼镜可信视界自律公约》。超 80% AI 眼镜供应链在中国、2025 年中国市场出货量近百万台。对融媒技术研发意义：第一人称视角的"现场新闻"AI 拍摄+实时剪辑是未来融媒新形态。</div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-title"><a href="https://news.qq.com/rain/a/20260617A02RZH00" target="_blank">国产 AI 智能体生态加速：支付宝 AI 支付完成 3 亿笔智能体支付，Token Pay 接入主流大模型</a></div>
+      <div class="news-meta"><span class="date">2026-06-15</span> <span class="pill">智能体</span> <span class="pill orange">支付基建</span></div>
+      <div class="news-summary">6/15 支付宝 AI 支付完成 3 亿笔 AI 智能体支付，支持 95% 通用智能体框架，成为全球首个大规模商用的 AI 原生支付基建。同日国产大模型 MiniMax M3 全面接入 Token Pay（支付宝面向 MaaS 的支付解决方案）。对融媒技术研发意义：智能体商业化闭环已跑通，南方智媒云"南方 AI 智能体"可参考接入 Token Pay，构建"智能体+内容付费"商业模式。</div>
+    </div>
+  </section>
+
+  <!-- 本周研判 -->
+  <div class="summary-box" id="summary">
+    <h3>📌 本周研判</h3>
+    <p><strong>一句话总评：</strong>本周是 2026 年"AI 资本+大模型开源+智能体生态"三线齐发的标志性窗口：DeepSeek 500 亿融资、智谱 GLM-5.2 开源、中科闻歌招股、AI 眼镜深圳展、WAIC 倒计时构成主轴；南方智媒云体系内则处于"内部能力沉淀"阶段，6/17 资质认证采购+5 月底的"云端砺剑（二）"特训营是直接动作。</p>
+    <p><strong>对融媒技术研发团队的 3 条关键启示：</strong></p>
+    <ul>
+      <li><strong>国产开源大模型+国产算力</strong>已形成"双替代"成熟生态：智谱 GLM-5.2 Day 0 适配华为昇腾等 8 家国产算力平台 + DeepSeek 持续高性价比开源，可作为南方智媒云大模型"双底座"备选方案，降低对单一闭源模型的依赖。</li>
+      <li><strong>"决策大模型"正成为新分水岭</strong>：中科闻歌以"媒体、政务等复杂信息场景"起家、6/26 将登陆港交所，建议团队研究其 Decitron 决策机的"建模-推演-验证"路径，与现有"南方 AI 智能体"形成能力互补。</li>
+      <li><strong>智能体商业化闭环已跑通</strong>：支付宝 AI 支付 3 亿笔+Token Pay 接入主流大模型，7/17-20 WAIC 2026 将集中展示 300+ AI 产品。建议团队关注智能体+融媒内容的"付费/订阅/广告"商业模式拓展，以及 AI 眼镜作为"现场新闻"采集终端的可能性。</li>
+    </ul>
+  </div>
+
+  <!-- 归档导航 -->
+  <div class="archive-nav">
+    <div class="archive-title">📚 周报归档 · 往期回顾</div>
+    <div class="archive-grid">
+      <a class="archive-item current" href="w2625.html">
+        <div class="issue">W2625</div>
+        <div class="period">2026.06.15 — 06.21</div>
+        <span class="tag">当前页面</span>
+      </a>
+      <a class="archive-item" href="w2623.html">
+        <div class="issue">W2623</div>
+        <div class="period">2026.06.01 — 06.07</div>
+        <span class="tag">上一期</span>
+      </a>
+      <a class="archive-item" href="w2622.html">
+        <div class="issue">W2622</div>
+        <div class="period">2026.05.25 — 05.31</div>
+        <span class="tag">往期</span>
+      </a>
+    </div>
+    <p style="margin-top:14px;font-size:12px;color:var(--text-muted);">
+      📋 查看所有期次 → <a href="./" style="color:var(--accent);text-decoration:none;">周报汇集页</a>
+    </p>
+  </div>
+
+  <div class="footer">
+    <p>《南方智媒云行业周报》W2625 · 数据截止 2026 年 6 月 21 日</p>
+    <p>数据来源：人民日报、新华社、人民网、国家广电总局、南方网、央视新闻、腾讯新闻、新浪财经、东方财富、澎湃新闻、四川省政府、深圳新闻网、企查查、采招网等公开渠道</p>
+    <p>本报告仅供融媒技术研发团队内部参考</p>
+  </div>
+
+</div>
+</body>
+</html>
