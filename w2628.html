@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>南方智媒云行业周报 W2628 | 2026.07.06 - 07.12</title>
+<meta property="og:title" content="南方智媒云行业周报 W2628">
+<meta property="og:description" content="本周共收录 20 条资讯，覆盖 7 大版块。南方智媒云本周聚焦生成式AI与AIGC内容标识治理，发布两篇技术实践文章；竞品生态整体偏冷，仅派生万物、凡闻科技有动态；供应商中标活跃，拓尔思、索贝、中科大洋、美摄、广电运通各有斩">
+<meta property="og:image" content="https://judie2010.github.io/Nfzmy-zb/og-image.png">
+<meta property="og:url" content="https://judie2010.github.io/Nfzmy-zb/w2628.html">
+<meta property="og:type" content="article">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.6}
+.container{max-width:880px;margin:0 auto;padding:20px 16px 60px}
+.header{background:linear-gradient(135deg,#1B3A5C 0%,#2a5f8f 100%);border-radius:16px;padding:32px 28px;margin-bottom:28px;color:#fff;position:relative;overflow:hidden}
+.header::after{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:rgba(99,102,241,0.15);border-radius:50%}
+.header::before{content:'';position:absolute;bottom:-60px;left:-60px;width:200px;height:200px;background:rgba(99,102,241,0.08);border-radius:50%}
+.issue-badge{display:inline-block;background:#6366f1;color:#fff;font-size:13px;font-weight:600;padding:4px 14px;border-radius:20px;margin-bottom:12px;letter-spacing:1px}
+.header h1{font-size:22px;font-weight:700;margin-bottom:6px;letter-spacing:0.5px}
+.header .subtitle{font-size:14px;color:rgba(255,255,255,0.85);margin-bottom:10px}
+.header .dates{font-size:13px;color:rgba(255,255,255,0.7)}
+.header .tagline{font-size:12px;color:rgba(255,255,255,0.6);margin-top:8px}
+.section{margin-bottom:24px}
+.section-title{font-size:18px;font-weight:700;padding:10px 16px;border-radius:10px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.section-title.s1{background:linear-gradient(90deg,#1B3A5C,#2a5f8f);color:#fff}
+.section-title.s2{background:linear-gradient(90deg,#0d9488,#14b8a6);color:#fff}
+.section-title.s3{background:linear-gradient(90deg,#ea580c,#f97316);color:#fff}
+.section-title.s4{background:linear-gradient(90deg,#7c3aed,#8b5cf6);color:#fff}
+.section-title.s5{background:linear-gradient(90deg,#dc2626,#ef4444);color:#fff}
+.section-title.s6{background:linear-gradient(90deg,#0369a1,#0ea5e9);color:#fff}
+.section-title.s7{background:linear-gradient(90deg,#4f46e5,#6366f1);color:#fff}
+.card{background:#fff;border-radius:12px;padding:18px 20px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,0.06);border:1px solid #e8ecf1;transition:box-shadow .2s}
+.card:hover{box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+.card .card-title{font-size:15px;font-weight:600;color:#1B3A5C;margin-bottom:8px;display:flex;align-items:baseline;gap:6px}
+.card .card-title a{color:#1B3A5C;text-decoration:none;border-bottom:1px solid rgba(27,58,92,0.2)}
+.card .card-title a:hover{border-bottom-color:#6366f1;color:#6366f1}
+.card .meta{font-size:12px;color:#6b7280;margin-bottom:8px}
+.card .meta .source{color:#6366f1;font-weight:500}
+.card .summary{font-size:14px;color:#374151;line-height:1.65}
+.card .highlight{background:#f0f4ff;padding:8px 12px;border-radius:8px;font-size:13px;color:#1B3A5C;margin-top:10px;border-left:3px solid #6366f1}
+.competitor-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.no-update{background:#f9fafb;border-radius:10px;padding:14px 18px;font-size:13px;color:#9ca3af;text-align:center;border:1px solid #e5e7eb;margin-bottom:12px}
+.judgment{background:linear-gradient(135deg,#1B3A5C,#2a5f8f);border-radius:14px;padding:24px 22px;color:#fff;margin-top:28px}
+.judgment h3{font-size:17px;margin-bottom:10px}
+.judgment .total-eval{font-size:15px;line-height:1.6;margin-bottom:14px;font-weight:500}
+.judgment .insights{list-style:none;padding:0}
+.judgment .insights li{font-size:14px;line-height:1.6;margin-bottom:8px;padding-left:20px;position:relative}
+.judgment .insights li::before{content:'💡';position:absolute;left:0}
+.footer{text-align:center;padding:24px 0;font-size:12px;color:#9ca3af;border-top:1px solid #e5e7eb;margin-top:20px}
+.archive-nav{background:#fff;border-radius:14px;padding:20px;margin-top:28px;border:1px solid #e8ecf1}
+.archive-nav .archive-title{font-size:16px;font-weight:600;color:#1B3A5C;margin-bottom:16px;text-align:center}
+.archive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.archive-item{display:block;background:#f5f7fa;border-radius:10px;padding:14px;text-align:center;text-decoration:none;color:#2c3e50;border:1px solid #e8ecf1;transition:all .2s}
+.archive-item:hover{background:#eef2ff;border-color:#6366f1}
+.archive-item.current{background:#eef2ff;border-color:#6366f1;border-width:2px}
+.archive-item .issue{font-size:16px;font-weight:700;color:#1B3A5C}
+.archive-item .period{font-size:11px;color:#6b7280;margin-top:4px}
+.archive-item .tag{display:inline-block;font-size:10px;background:#6366f1;color:#fff;padding:2px 8px;border-radius:10px;margin-top:6px}
+.archive-item.current .tag{background:#1B3A5C}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<div class="issue-badge">W2628</div>
+<h1>南方智媒云行业周报</h1>
+<div class="subtitle">聚焦南方智媒云及其竞品生态，追踪报业融媒技术前沿</div>
+<div class="dates">2026年7月6日 — 7月12日</div>
+<div class="tagline">5圈层 · 7版块 · 20条资讯</div>
+</div>
+
+<div class="section">
+<div class="section-title s1">一、🔥 南方智媒云动态</div>
+<div class="card">
+<div class="card-title"><a href="https://www.toutiao.com/article/7659970535190692406" target="_blank">生成式人工智能在南方智媒云上的探索与实践</a></div>
+<div class="meta"><span class="source">融媒杂志 / 今日头条</span> · 2026-07-08</div>
+<div class="summary">广东南方智媒科技有限公司基于“数据—模型—应用”体系，在南方智媒云开展生成式人工智能探索与实践。文章介绍建立媒体垂域语料库、设计多模型协作架构、开发跨模态业务融合方案，支撑“策、采、编、审、发、评、馈”全流程智能化，为省级媒体技术平台落地生成式AI提供参考路径。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://news.qq.com/rain/a/20260708A01SDJ00?refer=cp_1009" target="_blank">人工智能生成合成内容标识标准能力体系在南方智媒云的应用实践</a></div>
+<div class="meta"><span class="source">南方传媒研究 / 腾讯新闻</span> · 2026-07-08</div>
+<div class="summary">南方智媒云构建“能力底座+服务中台+场景应用”三层架构，实现显隐协同标识能力建设，研发“火眼AI鉴真”多模态检测系统，形成“添加—检测—核验”的标识合规检验闭环。该能力已嵌入内容生产和采编审核链路，并向广东省内融媒体中心推广输出。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://www.nfnews.com/content/X3Rvkr0Z3P.html" target="_blank">共探媒体融合技术创新之路！广东报业协会技术年会在中山召开</a></div>
+<div class="meta"><span class="source">南方都市报 / 南方+</span> · 2026-07-09</div>
+<div class="summary">广东省报业协会2026年技术年会暨“AIGC赋能主流媒体系统性变革”研讨会在中山日报社举行。中国报业协会技术委员会主任辛乘胜指出，《中国报业“十五五”媒体融合技术发展规划》以“人工智能+”为主线，推动报业向国家智能信息服务平台转型。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title s2">二、📰 南方新闻网动态</div>
+<div class="card">
+<div class="card-title"><a href="https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202607/t20260706_26875386.htm" target="_blank">广东省妇女联合会全媒体平台运营运维服务项目中标公告</a></div>
+<div class="meta"><span class="source">中国政府采购网</span> · 2026-07-06</div>
+<div class="summary">广东南方网络信息科技有限公司以136.9万元中标广东省妇女联合会全媒体平台运营运维服务项目，服务期至2026年12月15日，综合得分87.19分。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://wsjkw.gd.gov.cn/zwgk_gsgg/content/post_4922981.html" target="_blank">广东省健康科普资源库专栏作品著录服务委托业务遴选结果公告</a></div>
+<div class="meta"><span class="source">广东省卫生健康委员会</span> · 2026-07-10</div>
+<div class="summary">广东省卫生健康委确定广东南方网络信息科技有限公司承担2026年广东省健康科普资源库专栏作品著录服务委托业务，项目方案具备可操作性。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title s3">三、⚔️ 竞品生态追踪</div>
+<div class="no-update">传播大脑（浙报集团） · 本周无重大更新</div>
+<div class="no-update">深报智汇（深圳报业） · 本周无重大更新</div>
+<div class="card">
+<div class="card-title"><a href="https://www.thepaper.cn/newsDetail_forward_33524595?commTag=true" target="_blank">青春不留白，AI定格热爱！派生万物打卡机闪现复旦、华师大毕业季</a></div>
+<div class="meta"><span class="source">澎湃新闻</span> · 2026-07-07</div>
+<div class="summary">澎湃新闻旗下技术品牌“派生万物”携手邮储银行，将自主研发的“AI毕业大片打卡机”搬进华东师范大学与复旦大学毕业典礼现场。为两校定制专属AI模型，学生现场拍照即可一键生成带学校地标的毕业大片，持续拓展AI在文博教育、城市传播等场景的落地。</div>
+</div>
+<div class="no-update">封面智媒云（华西/封面） · 本周无重大更新</div>
+<div class="no-update">四川“一朵云”（天府融媒） · 本周无重大更新</div>
+<div class="card">
+<div class="card-title"><a href="https://www.ccgp.gov.cn/cggg/dfgg/zbgg/202607/t20260708_26894583.htm" target="_blank">云报集团信息化建设运维项目-大数据传播力基础平台服务及数字数据资源采购中标公告</a></div>
+<div class="meta"><span class="source">中国政府采购网</span> · 2026-07-08</div>
+<div class="summary">杭州凡闻科技有限公司以98.5万元中标云南日报报业集团大数据传播力基础平台服务及数字数据资源采购项目，提供全网新闻稿件资源、集团记者稿件传播统计等大数据服务，并包含大模型3D生成服务。</div>
+</div>
+<div class="no-update">华栖云（杭州） · 本周无重大更新</div>
+<div class="no-update">思拓合众（北京） · 本周无重大更新</div>
+</div>
+<div class="section">
+<div class="section-title s4">四、🔧 融媒技术供应商观察</div>
+<div class="card">
+<div class="card-title"><a href="http://www.ccgp.gov.cn/cggg/zygg/cjgg/202607/t20260708_26897107.htm" target="_blank">拓尔思中标国家统计局广东调查总队网站管理平台升级改造项目</a></div>
+<div class="meta"><span class="source">中国政府采购网（via 天眼查）</span> · 2026-07-08</div>
+<div class="summary">拓尔思信息技术股份有限公司中标国家统计局广东调查总队网站管理平台升级改造项目，持续在政府统计网站内容管理与智能化方向拓展。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://www.ebnew.com/businessShow/709022987.html" target="_blank">索贝数码中标人工智能音视频技术创新中心项目</a></div>
+<div class="meta"><span class="source">必联网</span> · 2026-07-10</div>
+<div class="summary">成都索贝数码科技股份有限公司中标湖南大众传媒职业技术学院人工智能音视频技术创新中心项目建设，围绕AI+音视频创作、智能媒资等方向提供解决方案。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://ggzy.guizhou.gov.cn/tradeInfo/detailHtml?metaId=1234039950111019008" target="_blank">中科大洋中标黔西南州融媒体中心智能一体化生产平台系统建设</a></div>
+<div class="meta"><span class="source">贵州公共资源交易网</span> · 2026-07-06</div>
+<div class="summary">北京中科大洋信息技术有限公司中标黔西南州融媒体中心智能一体化生产平台系统建设项目，合同签订及公告日期均为2026年7月6日。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://aiqicha.baidu.com/tenderbidding/detail?dataId=113934e3c0df0d430a4f309f28615d794ab28cad&pid=36063624015900" target="_blank">美摄网络中标咪咕视讯创作者采编工具（成品软件）采购项目</a></div>
+<div class="meta"><span class="source">爱企查</span> · 2026-07-06</div>
+<div class="summary">北京美摄网络科技有限公司中标咪咕视讯视频产品及能力平台三期创作者采编工具（成品软件）采购项目，持续在运营商视频内容生产工具市场保持活跃。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://finance.sina.com.cn/roll/2026-07-10/doc-inihhkup5148897.shtml" target="_blank">广电运通子公司中标广州市数字政府“一朵云”第二阶段项目</a></div>
+<div class="meta"><span class="source">新浪财经 / 同花顺</span> · 2026-07-07</div>
+<div class="summary">广电运通子公司运通信息中标广州市数字政府“一朵云”第二阶段项目，金额约3.09亿元，累计中标金额超8.8亿元，并承建广州人工智能公共算力中心两期项目。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title s5">五、🏛️ 行业政策与监管动态</div>
+<div class="card">
+<div class="card-title"><a href="https://gdj.jl.gov.cn/zwgk/tzgg/202607/t20260708_9661800.html" target="_blank">国家广电总局发布《面向移动终端的超高清视频分发格式规范》等多项行业标准</a></div>
+<div class="meta"><span class="source">吉林省广播电视局 / 国家广电总局</span> · 2026-07-08</div>
+<div class="summary">国家广播电视总局近期发布《面向移动终端的超高清视频分发格式规范》（GY/T 427-2026）等多项广播电视和网络视听行业标准，涉及超高清分发、一体化电视专网、8K测试图像、VR视听质量评价等。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://www.cnstock.com/commonDetail/741803?commTag=true" target="_blank">网信办发布生成式人工智能服务已备案信息公告（2026年5月至6月）</a></div>
+<div class="meta"><span class="source">网信中国 / 中国证券网</span> · 2026-07-10</div>
+<div class="summary">2026年5月至6月新增120款生成式人工智能服务完成国家网信办备案，新增68款应用完成登记；截至6月30日，累计988款服务、598款应用完成备案或登记。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://www.stcn.com/article/detail/4000420.html" target="_blank">中央网信办深入开展“清朗·整治AI应用乱象”专项行动第一阶段工作</a></div>
+<div class="meta"><span class="source">证券时报</span> · 2026-07-06</div>
+<div class="summary">专项行动累计处置违规网站、应用程序、智能体等AI产品1.4万余款，清理违法违规信息600余万条，处置账号2.6万余个。第二阶段将聚焦利用AI制作发布虚假信息、散播暴力低俗等不良信息等问题。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title s6">六、📈 报业集团战略动态</div>
+<div class="card">
+<div class="card-title"><a href="https://www.nfnews.com/content/X3Rvkr0Z3P.html" target="_blank">广东报业协会技术年会聚焦AIGC赋能主流媒体系统性变革</a></div>
+<div class="meta"><span class="source">南方都市报 / 南方+</span> · 2026-07-09</div>
+<div class="summary">广东省报业协会2026年技术年会在中山日报社召开，主题为“AIGC赋能主流媒体系统性变革”。会议明确“十五五”开局之年主流媒体深化系统性变革、加快智能化转型的关键方向，并宣布2026中国报业技术年会将于12月在昆明召开。</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title s7">七、🔬 融媒技术与产品前沿</div>
+<div class="card">
+<div class="card-title"><a href="https://www.sohu.com/a/1047970237_488163" target="_blank">华数传媒上线“蒲鉴助手”联网大模型审核智能体</a></div>
+<div class="meta"><span class="source">流媒体网 / 搜狐</span> · 2026-07-09</div>
+<div class="summary">华数传媒蒲公英智能审核平台上线首个联网大模型审核智能体“蒲鉴助手”，深度融合大模型检索与智能分析能力，覆盖视频截帧、节目信息、主创信息等多维度数据校验，实现从智能化审核到智能化决策的升级。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://finance.sina.com.cn/roll/2026-07-10/doc-inihhkup5148897.shtml" target="_blank">腾讯混元Hy3正式版发布并接入多款产品</a></div>
+<div class="meta"><span class="source">21世纪经济报道 / 新浪财经</span> · 2026-07-06</div>
+<div class="summary">腾讯混元Hy3正式版于7月6日发布，同步接入WorkBuddy/CodeBuddy、元宝、Marvis、ima等产品。腾讯表示Hy3在推理、智能体能力、抗幻觉和产品体验上全面提升，上线后算力资源一度出现排队。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://k.sina.com.cn/article_5953189932_162d6782c06704m5ts.html?loc=3" target="_blank">科大讯飞将亮相WAIC 2026并展示讯飞星火大模型</a></div>
+<div class="meta"><span class="source">新浪网</span> · 2026-07-10</div>
+<div class="summary">科大讯飞作为2026世界人工智能大会战略合作伙伴，将展示讯飞星火大模型及智慧教育、医疗、企业服务、智能办公、机器翻译、具身智能、智能硬件等全栈自主可控AI成果。</div>
+</div>
+<div class="card">
+<div class="card-title"><a href="https://new.qq.com/rain/a/20260706A0980M00" target="_blank">大厂AI进入大一统：入口归一、能力聚合</a></div>
+<div class="meta"><span class="source">QQ新闻 / 深网</span> · 2026-07-06</div>
+<div class="summary">微信内测“小微”、支付宝上线“阿宝”、百度整合文心产品、阿里收拢QoderWork/悟空/MuleRun，国内大厂集体从“百模大战”的分散赛马转向统一入口与能力聚合，AI应用进入整合期。</div>
+</div>
+</div>
+
+
+<div class="judgment">
+<h3>本周研判</h3>
+<div class="total-eval">南方智媒云本周聚焦生成式AI与AIGC内容标识治理，发布两篇技术实践文章；竞品生态整体偏冷，仅派生万物、凡闻科技有动态；供应商中标活跃，拓尔思、索贝、中科大洋、美摄、广电运通各有斩获；监管层面AI备案与清朗整治并举，行业进入合规深水区。</div>
+<ul class="insights">
+<li>南方智媒云本周聚焦生成式AI与AIGC标识合规，形成“技术研发—标准落地—行业推广”的完整叙事，可借鉴以“火眼AI鉴真”为代表的合规能力产品化路径。</li>
+<li>竞品生态整体偏冷，仅派生万物、凡闻科技有落地动态，提示省级融媒技术平台进入暑期淡季，需关注 WAIC 2026（7月17-20日）前后密集释放的新产品。</li>
+<li>供应商中标活跃，拓尔思、索贝、中科大洋、美摄、广电运通各有斩获，反映媒体技术基建向“AI+超高清+智能媒资”持续升级。</li>
+<li>监管层面AI备案扩容与清朗整治并举，AIGC标识、内容审核将成为省级融媒平台合规标配，南方智媒云可提前布局多模态检测与标识自动化能力。</li>
+</ul>
+</div>
+
+
+<div class="archive-nav">
+<div class="archive-title">📚 周报归档 · 往期回顾</div>
+<div class="archive-grid">
+<a class="archive-item current" href="w2628.html">
+<div class="issue">W2628</div>
+<div class="period">2026.07.06 — 07.12</div>
+<span class="tag">当前页面</span>
+</a>
+<a class="archive-item" href="w2627.html">
+<div class="issue">W2627</div>
+<div class="period">2026.06.29 — 07.05</div>
+<span class="tag">上一期</span>
+</a>
+<a class="archive-item" href="w2626.html">
+<div class="issue">W2626</div>
+<div class="period">2026.06.22 — 06.28</div>
+<span class="tag">往期</span>
+</a>
+</div>
+<p style="margin-top:14px;font-size:12px;">
+📋 查看所有期次 → <a href="./">周报汇集页</a>
+</p>
+</div>
+
+
+<div class="footer">
+《南方智媒云行业周报》W2628 · 数据截止 2026年7月12日
+</div>
+
+</div>
+</body>
+</html>
